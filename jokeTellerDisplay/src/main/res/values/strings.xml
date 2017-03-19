@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JokeGenerator</string>
+    <string name="no_joke_for_you">I didn\'t get a joke, is that supposed to be funny?</string>
+</resources>
