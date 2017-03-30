@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Build it Bigger</string>
-    <string name="instructions">Press the button for a delicious joke!</string>
+    <string name="app_name">Joke Generator</string>
+    <string name="instructions">Press the button to generate a joke!</string>
     <string name="button_text">Tell Joke</string>
     <string name="action_settings">Settings</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_test_device">E88C36B87AADAE9DD43DA65429398CD8</string>
+    <string name="server_error">We were not able to contact the server</string>
 </resources>

@@ -10,7 +10,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
 
 public class JokeTellerActivity extends AppCompatActivity {
-    private static final String JOKING = "JokeGen.Joke";
+    public static final String JOKING = "JokeGen.Joke";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,6 @@ public class JokeTellerActivity extends AppCompatActivity {
     }
 
     private void animatePunchline(String punchline) {
-        Log.d(JOKING, punchline);
         TextView punchlineText = (TextView) findViewById(R.id.punchline_text);
 
         AlphaAnimation animation1 = new AlphaAnimation(0.0f, 1.0f);

@@ -1,18 +1,13 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.udacity.gradle.jokegen.JokeGenerator;
-import com.udacity.gradle.jokegen.JokeTellerActivity;
-
 
 public class MainActivity extends AppCompatActivity {
-    private static final String JOKING = "JokeGen.Joke";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +37,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void tellJoke(View view) {
-        // Create Intent to launch JokeGenerator
-        Intent intent = new Intent(this, JokeTellerActivity.class);
-        intent.putExtra(JOKING, JokeGenerator.tellJoke());
-        startActivity(intent);
-    }
-
 
 }
