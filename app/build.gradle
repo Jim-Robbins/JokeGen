@@ -53,22 +53,22 @@ dependencies {
 }
 
 task testProject {
-    dependsOn(['startDevServer','runMyTests','shutdownDevServer'])
+    dependsOn(['startJokeServer','runUnitTests','stopJokeServer'])
 }
 
-task startDevServer {
+task startJokeServer {
     dependsOn ':backend:appengineRun'
     evaluationDependsOn(":backend")
     project(':backend').appengine.daemon = true
 }
 
-task runMyTests {
+task runUnitTests {
     dependsOn ':app:connectedAndroidTest'
-    mustRunAfter "startDevServer"
+    mustRunAfter "startJokeServer"
 }
 
-task shutdownDevServer {
+task stopJokeServer {
     dependsOn ':backend:appengineStop'
-    mustRunAfter "runMyTests"
+    mustRunAfter "runUnitTests"
 
 }
